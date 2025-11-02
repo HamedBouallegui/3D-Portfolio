@@ -21,7 +21,7 @@ const PROJECTS = [
   },
   {
     id: 2,
-    name: "financeme",
+    name: "CarWash",
     description: `This project demonstrates the deployment of a DevOps pipeline for a global banking and
             financial services provider, FinanceMe. The company transitioned from a monolithic 
             architecture to a microservice-based architecture to handle increased traffic and 

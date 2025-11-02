@@ -12,6 +12,8 @@ import Script from "next/script";
 import Preloader from "@/components/preloader";
 import EasterEggs from "@/components/easter-eggs";
 import { config } from "@/data/config";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: config.title,
@@ -83,6 +85,8 @@ export default function RootLayout({
             <Toaster />
             <EasterEggs />
             <ElasticCursor />
+            <Analytics />
+            <SpeedInsights />
           </Preloader>
         </ThemeProvider>
       </body>

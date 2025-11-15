@@ -828,7 +828,7 @@ const projects: Project[] = [
     id: "CarWash",
     category: "Flutter App",
     title: " CarWash App: A mobile application",
-    src: "/assets/projects-screenshots/CarWash/WhatsApp Image 2025-09-30 à 20.53.31_294e32b9.jpg",
+    src: "/assets/projects-screenshots/CarWash/Purple Pink Gradient Mobile Application Presentation.png",
     screenshots: ["/assets/projects-screenshots/CarWash/1.png","/assets/projects-screenshots/CarWash/2.png","/assets/projects-screenshots/CarWash/3.png"],
     skills: {
       frontend: [

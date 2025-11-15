@@ -20,6 +20,17 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (message.trim().length < 10) {
+      toast({
+        title: "Message too short",
+        description: "Please write at least 10 characters.",
+        className: cn(
+          "top-0 w-full flex justify-center fixed md:max-w-7xl md:top-4 md:right-4"
+        ),
+        variant: "destructive",
+      });
+      return;
+    }
     setLoading(true);
     try {
       const res = await fetch("/api/send", {
@@ -34,7 +45,27 @@ const ContactForm = () => {
         }),
       });
       const data = await res.json();
-      if (data.error) throw new Error(data.error);
+      if (!res.ok || data.error) {
+        console.error("API Error:", data);
+        console.error(
+          "Validation details:",
+          JSON.stringify(data.details, null, 2)
+        );
+        const errorMessage =
+          data?.details?.[0]?.message ||
+          data?.error ||
+          "Something went wrong! Please check the fields.";
+        toast({
+          title: "Error",
+          description: errorMessage,
+          className: cn(
+            "top-0 w-full flex justify-center fixed md:max-w-7xl md:top-4 md:right-4"
+          ),
+          variant: "destructive",
+        });
+        setLoading(false);
+        return;
+      }
       toast({
         title: "Thank you!",
         description: "I'll get back to you as soon as possible.",
@@ -52,7 +83,7 @@ const ContactForm = () => {
     } catch (err) {
       toast({
         title: "Error",
-        description: "Something went wrong! Please check the fields.",
+        description: "Something went wrong! Please try again.",
         className: cn(
           "top-0 w-full flex justify-center fixed md:max-w-7xl md:top-4 md:right-4"
         ),

@@ -25,8 +25,13 @@ export async function POST(req: Request) {
       data: zodData,
       error: zodError,
     } = Email.safeParse(body);
-    if (!zodSuccess)
-      return Response.json({ error: zodError?.message }, { status: 400 });
+    if (!zodSuccess) {
+      console.error("Validation error:", zodError);
+      return Response.json({ 
+        error: "Validation failed", 
+        details: zodError?.errors 
+      }, { status: 400 });
+    }
 
     // Get Resend client at runtime
     const resend = getResendClient();

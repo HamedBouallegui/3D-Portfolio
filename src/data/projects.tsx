@@ -971,6 +971,49 @@ const projects: Project[] = [
       );
     },
   },
+
+  { // 04. Smart parking assitant
+    id: " Devilery App",
+    category: "Flutter App",
+    title: " Delivery App",
+    src: "/assets/projects-screenshots/delivery_app/Purple Pink Gradient Mobile Application Presentation (1).png",
+    screenshots: ["Screenshot 2025-12-01 125133.png", "Screenshot 2025-12-01 125639.png","Screenshot 2025-12-01 125859.png"],
+    live: "https://github.com/HamedBouallegui/Delivery_App",
+    github:"https://github.com/HamedBouallegui/Delivery_App",
+    skills: {
+        frontend: [
+        PROJECT_SKILLS.flutter,
+        PROJECT_SKILLS.dart,
+        PROJECT_SKILLS.ios,
+        PROJECT_SKILLS.android,
+        PROJECT_SKILLS.docker
+
+      ],
+      backend: [PROJECT_SKILLS.node, 
+                PROJECT_SKILLS.express,
+                PROJECT_SKILLS.mongo,
+                PROJECT_SKILLS.docker
+
+
+              ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+🚀 Fast and easy delivery app to order products 🛒, track your driver in real time 🚚, and receive your items at your door 📦.          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <SlideShow
+            images={[
+              `${BASE_PATH}/delivery_app/Screenshot 2025-12-01 125133.png`,
+              `${BASE_PATH}/delivery_app/Screenshot 2025-12-01 125639.png`,
+              `${BASE_PATH}/delivery_app/Screenshot 2025-12-01 125859.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
   // { // 05. Smart Job Tracker project
   //   id: "smartjobtracker",
   //   category: "Full stack",

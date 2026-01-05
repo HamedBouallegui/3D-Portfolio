@@ -243,55 +243,55 @@ const PROJECT_SKILLS = {
     title: "OpenAI",
     bg: "black",
     fg: "white",
-    icon: <img src="assets/icons/openai-svgrepo-com_white.svg" alt="OpenAI"/>,
+    icon: <img src="assets/icons/openai-svgrepo-com_white.svg" alt="OpenAI" />,
   },
   netlify: {
     title: "Netlify",
     bg: "black",
     fg: "white",
-    icon: <SiNetlify/>,
+    icon: <SiNetlify />,
   },
   html: {
     title: "HTML5",
     bg: "black",
     fg: "white",
-    icon: <SiHtml5/>,
+    icon: <SiHtml5 />,
   },
   css: {
     title: "CSS3",
     bg: "black",
     fg: "white",
-    icon: <SiCss3/>,
+    icon: <SiCss3 />,
   },
   bootstrap: {
     title: "Bootstrap",
     bg: "black",
     fg: "white",
-    icon: <SiBootstrap/>,
+    icon: <SiBootstrap />,
   },
   maven: {
     title: "Maven",
     bg: "black",
     fg: "white",
-    icon: <SiApachemaven/>,
+    icon: <SiApachemaven />,
   },
   java: {
     title: "Java",
     bg: "black",
     fg: "white",
-    icon: <img src="assets/icons/icons8-java.svg" alt="Java"/>,
+    icon: <img src="assets/icons/icons8-java.svg" alt="Java" />,
   },
   cplusplus: {
     title: "C++",
     bg: "black",
     fg: "white",
-    icon: <SiCplusplus/>,
+    icon: <SiCplusplus />,
   },
   arduino: {
     title: "Arduino",
     bg: "black",
     fg: "white",
-    icon: <SiArduino/>,
+    icon: <SiArduino />,
   },
   flutter: {
     title: "Flutter",
@@ -794,30 +794,29 @@ const projects: Project[] = [
 
   // +
   { // 01. AI Docker file optimizer project
-    id: "DoctorAppointment",
-    category: "Angular & NodeJS",
-    title: "Doctor Appointment System",
-    src: "/assets/projects-screenshots/Doctor-appointment/Screenshot 2025-10-31 151518.png",
-    screenshots: ["1.png", "2.png"],
-    live: "https://hamedbouallegui.github.io/Doctor_Appointment/",
-    github:"https://github.com/HamedBouallegui/Doctor_Appointment",
+    id: "AlphaTech",
+    category: "React & TypeScript",
+    title: "AlphaTech - Modern IT Solutions Platform",
+    src: "/assets/projects-screenshots/alphatech/alphahome.png",
+    screenshots: ["alphahome.png", "alphaproject.png"],
+    live: "https://alphatech-26.vercel.app/",
+    github: "https://github.com/HamedBouallegui/AlphaTech",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.angular, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
-      backend: [PROJECT_SKILLS.openai,PROJECT_SKILLS.node],
+      frontend: [PROJECT_SKILLS.ts, PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
+      backend: [PROJECT_SKILLS.ts, PROJECT_SKILLS.node],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-           A full-stack web application for booking doctor appointments online, 
-           featuring an integrated AI chatbot assistant that helps users find doctors, schedule appointments, and get quick answers.
-           Built using Angular, Node.js, and MongoDB.
+            AlphaTech is a modern IT solutions platform built using React and TypeScript. It offers a range of services including web development, mobile app development, and IT consulting.
+            The platform is designed to be user-friendly and easy to navigate, with a responsive design that works on all devices.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/Doctor-appointment/Screenshot 2025-10-31 151518.png`,
-              `${BASE_PATH}/Doctor-appointment/Screenshot 2025-10-31 151723.png`,
+              `${BASE_PATH}/alphatech/alphahome.png`,
+              `${BASE_PATH}/alphatech/alphaproject.png`,
             ]}
           />
         </div>
@@ -829,7 +828,7 @@ const projects: Project[] = [
     category: "Flutter App",
     title: " CarWash App: A mobile application",
     src: "/assets/projects-screenshots/CarWash/Purple Pink Gradient Mobile Application Presentation.png",
-    screenshots: ["/assets/projects-screenshots/CarWash/1.png","/assets/projects-screenshots/CarWash/2.png","/assets/projects-screenshots/CarWash/3.png"],
+    screenshots: ["/assets/projects-screenshots/CarWash/1.png", "/assets/projects-screenshots/CarWash/2.png", "/assets/projects-screenshots/CarWash/3.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.flutter,
@@ -849,17 +848,17 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            A mobile application for car wash services, allowing users to book appointments, 
+            A mobile application for car wash services, allowing users to book appointments,
             view available slots, and manage their bookings.
           </TypographyP>
           <TypographyP className="font-mono ">
-              🚗 CarWash App A mobile application for managing car wash bookings easily and efficiently. 
-              Built with Flutter for the frontend, Spring Boot for the backend, and MySQL as the database.
+            🚗 CarWash App A mobile application for managing car wash bookings easily and efficiently.
+            Built with Flutter for the frontend, Spring Boot for the backend, and MySQL as the database.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <TypographyH3 className="my-4 mt-8">Architecture </TypographyH3>
           <p className="font-mono mb-2">
-           
+
           </p>
           <SlideShow
             images={[
@@ -869,7 +868,7 @@ const projects: Project[] = [
               `${BASE_PATH}/CarWash/WhatsApp Image 2025-09-30 à 20.53.31_397572da.jpg`,
             ]}
           />
-         
+
         </div>
       );
     },
@@ -881,7 +880,7 @@ const projects: Project[] = [
     src: "/assets/projects-screenshots/myportfolio/Screenshot 2025-10-31 161026.png",
     screenshots: ["assets/projects-screenshots/myportfolio/Screenshot 2025-10-31 161026.png"],
     live: "",
-    github:"",
+    github: "",
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
@@ -945,9 +944,9 @@ const projects: Project[] = [
     category: "Java",
     title: " Library Management System",
     src: "/assets/projects-screenshots/Library/Screenshot 2025-10-30 125058.png",
-    screenshots: ["Screenshot 2025-10-30 125058.png", "Screenshot 2025-10-30 125315.png","Screenshot 2025-10-30 125454.png"],
+    screenshots: ["Screenshot 2025-10-30 125058.png", "Screenshot 2025-10-30 125315.png", "Screenshot 2025-10-30 125454.png"],
     live: "https://github.com/HamedBouallegui/Systeme-De-Gestion-De-Bibliotheque",
-    github:"https://github.com/HamedBouallegui/Systeme-De-Gestion-De-Bibliotheque",
+    github: "https://github.com/HamedBouallegui/Systeme-De-Gestion-De-Bibliotheque",
     skills: {
       frontend: [PROJECT_SKILLS.java],
       backend: [PROJECT_SKILLS.maven, PROJECT_SKILLS.java],
@@ -972,16 +971,18 @@ const projects: Project[] = [
     },
   },
 
+
+
   { // 04. Smart parking assitant
     id: " Devilery App",
     category: "Flutter App",
     title: " Delivery App",
     src: "/assets/projects-screenshots/delivery_app/Purple Pink Gradient Mobile Application Presentation (1).png",
-    screenshots: ["Screenshot 2025-12-01 125133.png", "Screenshot 2025-12-01 125639.png","Screenshot 2025-12-01 125859.png"],
+    screenshots: ["Screenshot 2025-12-01 125133.png", "Screenshot 2025-12-01 125639.png", "Screenshot 2025-12-01 125859.png"],
     live: "https://github.com/HamedBouallegui/Delivery_App",
-    github:"https://github.com/HamedBouallegui/Delivery_App",
+    github: "https://github.com/HamedBouallegui/Delivery_App",
     skills: {
-        frontend: [
+      frontend: [
         PROJECT_SKILLS.flutter,
         PROJECT_SKILLS.dart,
         PROJECT_SKILLS.ios,
@@ -989,25 +990,57 @@ const projects: Project[] = [
         PROJECT_SKILLS.docker
 
       ],
-      backend: [PROJECT_SKILLS.node, 
-                PROJECT_SKILLS.express,
-                PROJECT_SKILLS.mongo,
-                PROJECT_SKILLS.docker
+      backend: [PROJECT_SKILLS.node,
+      PROJECT_SKILLS.express,
+      PROJECT_SKILLS.mongo,
+      PROJECT_SKILLS.docker
 
 
-              ],
+      ],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-🚀 Fast and easy delivery app to order products 🛒, track your driver in real time 🚚, and receive your items at your door 📦.          </TypographyP>
+            🚀 Fast and easy delivery app to order products 🛒, track your driver in real time 🚚, and receive your items at your door 📦.          </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
               `${BASE_PATH}/delivery_app/Screenshot 2025-12-01 125133.png`,
               `${BASE_PATH}/delivery_app/Screenshot 2025-12-01 125639.png`,
               `${BASE_PATH}/delivery_app/Screenshot 2025-12-01 125859.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
+
+  { // 01. AI Docker file optimizer project
+    id: "DoctorAppointment",
+    category: "Angular & NodeJS",
+    title: "Doctor Appointment System",
+    src: "/assets/projects-screenshots/Doctor-appointment/Screenshot 2025-10-31 151518.png",
+    screenshots: ["1.png", "2.png"],
+    live: "https://hamedbouallegui.github.io/Doctor_Appointment/",
+    github: "https://github.com/HamedBouallegui/Doctor_Appointment",
+    skills: {
+      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.angular, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
+      backend: [PROJECT_SKILLS.openai, PROJECT_SKILLS.node],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            A full-stack web application for booking doctor appointments online,
+            featuring an integrated AI chatbot assistant that helps users find doctors, schedule appointments, and get quick answers.
+            Built using Angular, Node.js, and MongoDB.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <SlideShow
+            images={[
+              `${BASE_PATH}/Doctor-appointment/Screenshot 2025-10-31 151518.png`,
+              `${BASE_PATH}/Doctor-appointment/Screenshot 2025-10-31 151723.png`,
             ]}
           />
         </div>
